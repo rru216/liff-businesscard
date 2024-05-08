@@ -1,0 +1,90 @@
+{
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "url": "https://p2.bahamut.com.tw/B/2KU/33/394b5acaefbb432da365c58dea1ooz95.JPG",
+    "size": "full",
+    "aspectRatio": "20:13",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "text",
+            "text": "${vcard.name_tw}",
+            "flex": 2,
+            "size": "xl",
+            "weight": "bold"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "text",
+            "text": "${vcard.company}",
+            "flex": 1
+          },
+          {
+            "type": "text",
+            "text": "${vcard.title_tw}",
+            "flex": 1
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "${vcard.mobile.slice(1)}",
+          },
+          {
+            "type": "text",
+            "text": "${vcard.phone}" #"${vcard.ext}"
+          },
+          {
+            "type": "text",
+            "text": "${vcard.address}"
+          },
+          {
+            "type": "text",
+            "text": "${vcard.website}"
+          }
+        ],
+        "offsetTop": "10px"
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "Mail me",
+          "uri": "mailto:a6211252000a@gmail.com"
+        }
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "http://linecorp.com/"
+        }
+      }
+    ]
+  }
+}
